@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee - Cafeteria & Co</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #d4b491;">
+    <div class="container">
+      <a class="navbar-brand py-2" href="#">
+          <img src="img/logo.png" alt="logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+            role="button" data-toggle="dropdown" aria-haspopup="true" 
+            aria-expanded="false">Cardápio</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#cardapio">Iced Coffees</a>
+              <a class="dropdown-item" href="#cardapio">Cafés</a>
+              <a class="dropdown-item" href="#cardapio">Sobremesas</a>
+              <a class="dropdown-item" href="#cardapio">Wraps</a>
+              <a class="dropdown-item" href="#cardapio">Smoothies</a>
+              <a class="dropdown-item" href="#cardapio">Bowls</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+        
+        
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/bg-intro-2.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/bg-intro.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/bg-intro-3.jpg" alt="Third slide">
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+
+
+
+
+    <section class="text-center">
+      <div class="container">
+        <h2 class="display-4 py-5" id="sobre">Sobre Nós</h2>
+
+        <div class="row">
+          <div class="col-lg-6 img-sobre">
+            <img class="img-fluid" src="img/coffe-grain.jpg" alt="grao-1">
+          </div>
+
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/coffe-grain-2.jpg" alt="grao-2">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p class="px-5 py-4">A experiência de se tomar um bom café começa muito antes dele na xícara.
+              Nós, da Coffee, fazemos questão de conhecer pessoalmente todos os nossos fornecedores, 
+              que são pequenos produtores de Minas Gerais. Além disso, usamos um processo de torra de alta 
+              tecnologia e treinamos a melhor equipe de baristas para o preparo da bebida até que finalmente 
+              ela vá de encontro ao nosso cliente em uma xícara perfeita.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <section class="text-center bg-light" id="cardapio">
+      <div class="container pt-5">
+        <h2 class="display-4 pb-5">Cardápio</h2>
+          <div class="row pb-5">
+
+            <div class="col-xs-12 col-md-4 padding-xs">
+              <img src="img/cappucino.jpg" alt="café">
+              <div id="itensMenu" data-children=".item">
+                <div class="item">
+                  <a class="lead" data-toggle="collapse" data-parent="#itensMenu" href="#item1"
+                  aria-expanded="true" aria-controls="item1"><h3>Cafés ↴</h3></a>
+                  <div id="item1" class="colapse" role="tabpanel">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, 
+                      quibusdam itaque eum consequatur vero, eos impedit autem earum quam ullam 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-xs-12 col-md-4 padding-xs">
+              <img src="img/icedcoffee.jpg" alt="icedcoffee">
+              <div id="itensMenu" data-children=".item">
+                <div class="item">
+                  <a class="lead" data-toggle="collapse" data-parent="#itensMenu" href="#item2"
+                  aria-expanded="true" aria-controls="item2"><h3>Iced Coffees ↴</h3></a>
+                  <div id="item2" class="colapse" role="tabpanel">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, 
+                      quibusdam itaque eum consequatur vero, eos impedit autem earum quam ullam 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-xs-12 col-md-4">
+              <img src="img/desserts.jpg" alt="sobremesas">
+              <div id="itensMenu" data-children=".item">
+                <div class="item">
+                  <a class="lead" data-toggle="collapse" data-parent="#itensMenu" href="#item3"
+                  aria-expanded="true" aria-controls="item3"><h3>Sobremesas ↴</h3></a>
+                  <div id="item3" class="colapse" role="tabpanel">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, 
+                      quibusdam itaque eum consequatur vero, eos impedit autem earum quam ullam 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pb-5">
+            <div class="col-xs-12 col-md-4 padding-xs">
+                <img src="img/wraps.jpg" alt="wrap">
+                <div id="itensMenu" data-children=".item">
+                  <div class="item">
+                    <a class="lead" data-toggle="collapse" data-parent="#itensMenu" href="#item4"
+                    aria-expanded="true" aria-controls="item4"><h3>Wraps ↴</h3></a>
+                    <div id="item4" class="colapse" role="tabpanel">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, 
+                        quibusdam itaque eum consequatur vero, eos impedit autem earum quam ullam 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4 padding-xs">
+                <img src="img/smoothie.jpg" alt="smoothie">
+                <div id="itensMenu" data-children=".item">
+                  <div class="item">
+                    <a class="lead" data-toggle="collapse" data-parent="#itensMenu" href="#item5"
+                    aria-expanded="true" aria-controls="item5"><h3>Smoothies ↴</h3></a>
+                    <div id="item5" class="colapse" role="tabpanel">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, 
+                        quibusdam itaque eum consequatur vero, eos impedit autem earum quam ullam 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+              <img src="img/bowls.jpg" alt="bowls">
+              <div id="itensMenu" data-children=".item">
+                <div class="item">
+                  <a class="lead" data-toggle="collapse" data-parent="#itensMenu" href="#item6"
+                  aria-expanded="true" aria-controls="item6"><h3>Bowls ↴</h3></a>
+                  <div id="item6" class="colapse" role="tabpanel">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, 
+                      quibusdam itaque eum consequatur vero, eos impedit autem earum quam ullam 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </section>
+
+    <section class="bg-dark">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center text-white newsletter">
+            <h3>Assine Nossa Newsletter</h3>
+            <h6>promoções e eventos mensais</h6>
+          </div>
+          <div class="col-md-6">
+            <form action="">
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Digite seu email" aria-label="Email">
+                <span class="input-group-btn">
+                  <button class="btn btn-outline-light text-white btn-lg px-5" type="button">Enviar</button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row align-items-center" id="contato">
+          <div class="col-sm-6 col-md-4 text-center padding-xs">
+            <h6>Rua dos Pinheiros, 345, Pinheiros</h6>
+            <h6>São Paulo - SP</h6>
+          </div>
+
+          <div class="col-sm-6 col-md-4 text-center">
+            <a href="#"><img class="pr-4" src="img/redes-sociais/instagram_preto.png" alt="instagram"></a>
+            <a href="#"><img class="pr-4" src="img/redes-sociais/faebook_preto.png" alt="facebook"></a>
+            <a href="#"><img src="img/redes-sociais/twitter_preto.png" alt="twitter"></a>
+          </div>
+
+          <div class="col-md-4 d-none d-md-block text-center">
+            <img src="img/logo.png" alt="logo">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   
+ 
+    
+    
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js" ></script>
+    <script type="text/javascript" src="js/popper.min.js" ></script>
+    <script type="text/javascript" src="js/bootstrap.js" ></script>
+    <script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>
